@@ -107,3 +107,4 @@ dist
 *.abi
 package-lock.json
 test-ledger
+.env

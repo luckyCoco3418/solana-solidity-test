@@ -1,4 +1,4 @@
-# solana_solidity
-To test solidity on Solana
+# solana-solidity-test
+To test solidity code on Solana
 
 Reference: [soliditydeveloper.com](https://soliditydeveloper.com/solana)

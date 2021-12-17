@@ -1,3 +1,4 @@
+require("dotenv").config();
 const { Connection, LAMPORTS_PER_SOL, Keypair } = require('@solana/web3.js')
 const { Contract, publicKeyToHex } = require('@solana/solidity')
 const { readFileSync } = require('fs')
@@ -10,7 +11,7 @@ const BUNDLE_SO = readFileSync('./build/bundle.so')
     const connection = new Connection(
         // works only for localhost at the time of writing
         // see https://github.com/solana-labs/solana-solidity.js/issues/8
-        'http://localhost:8899', // "https://api.devnet.solana.com",
+        process.env.RPC_URL, // 'http://localhost:8899', // "https://api.devnet.solana.com",
         'confirmed'
     )
 
